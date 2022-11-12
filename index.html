@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- <script src="https://kit.fontawesome.com/95a6a0cdcd.js" crossorigin="anonymous"></script>
+ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Play:wght@400;700&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,400;0,500;0,900;1,100;1,400;1,900&family=Share+Tech&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />        <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
+        <title>Arhian's Library</title>
+    </head>
+
+    <body id="body">
+        <div class="form-cont">
+    
+            <form action="placeholder.com" method="post" id="newBookForm" class="newBookForm">
+                <h1>Add New Book</h1>
+                <p>
+                  Required fields are followed by
+                  <strong><span aria-label="required">*</span></strong>.
+                </p>
+    
+                <section>
+                  <h2>Book Information</h2>
+                  <p>
+                    <label for="book-cover">
+                        <span>Book Cover:</span>
+                        <strong><span aria-label="required">*</span></strong>
+                    </label>
+                    <input type="file" name="book-cover" id="book-cover">
+                  </p>
+                  <p>
+                    <label for="book-name">
+                      <span>Book Name:</span>
+                      <strong><span aria-label="required">*</span></strong>
+                    </label>
+                    <input type="text" name="book-name" id="book-name" required/>
+                  </p>
+    
+                  <p>
+                    <label for="book-author">
+                      <span>Author:</span>
+                      <strong><span aria-label="required">*</span></strong>
+                      <input type="text" name="book-author" id="book-author" required/>
+                    </label>
+                  </p>
+    
+                  <p>
+                    <label for="book-pages">
+                      <span>Number of Pages:</span>
+                      <strong><span aria-label="required">*</span></strong>
+                      <input type="number" name="book-pages" id="book-pages" required/>
+                    </label>
+                  </p>
+    
+                  <fieldset>
+                        <legend>Did you read the book entirely?</legend>
+                        <ul>
+                        <li>
+                            <label for="true">
+                            <input type="radio" name="book-read" id="true" value=true required/>
+                            Yes
+                            </label>
+                        </li>
+    
+                        <li>
+                            <label for="false">
+                            <input type="radio" name="book-read" id="false" value=false required/>
+                            No
+                            </label>
+                        </li>
+                        </ul>
+                  </fieldset>
+                </section>
+    
+                <section class="newBookForm-btns-cont">
+                  <button type="submit" form="newBookForm">Add Book</button>
+                  <button id="newBookForm-cancelBtn">Cancel</button>
+                </section>
+            </form>
+    
+        </div>
+
+        <div class="header">
+            <h1>ARHIAN'S LIBRARY</h1>
+            <div class="header-buttons-cont">
+                <!-- <button>Lists</button> -->
+                <button id="add-btn">Add book</button>
+            </div>
+        </div>
+    
+        <div class="book-display">
+<!--             <div class="book-card" id="read">
+                <img src="./assets/images/harry-potter.jpg" alt="book Cover" class="book-cover" />
+                <div id="read-div"><h1>READ</h1></div>
+                <div class="book-info">
+                    <h1 class="book-title">Harry Potter and the Sorcerer's Stone</h1>
+                    <h2 class="book-author">Author: JK Rowling</h2>
+                    <div class="btn-placement">
+                        <h2 class="book-pages">309 Pages</h2>
+                        <div class="icon-cont">
+                            <span class="material-symbols-rounded icon" id="fav" onclick="liked.apply(event.currentTarget.parentNode.parentNode.parentNode.parentNode)">favorite</span>
+                            <span class="material-symbols-rounded icon" id="del">delete</span>
+                            <span class="material-symbols-rounded icon" id="vis">visibility</span>
+                        </div>
+                    </div>
+                </div>
+ -->            </div>
+        </div>		
+        
+    </body>
+</html>
